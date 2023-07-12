@@ -1,0 +1,45 @@
+.soundcloud-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Track title styles */
+  .soundcloud-container h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Player styles */
+  .soundcloud-container .player {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Player controls styles */
+  .soundcloud-container .player .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .soundcloud-container .player .controls .play-btn {
+    background-color: #ff5500;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .soundcloud-container .player .controls .play-btn:hover {
+    background-color: #ff6a33;
+  }
+  
+  /* Track artwork styles */
+  .soundcloud-container .artwork {
+    margin-top: 20px;
+  }
+  
+  .soundcloud-container .artwork img {
+    max-width: 100%;
+  }
