@@ -24,7 +24,7 @@
   }
   
   .soundcloud-container .player .controls .play-btn {
-    background-color: #ff5500;
+    background-color: #33a3ff;
     color: #fff;
     padding: 5px 10px;
     border-radius: 4px;
@@ -32,7 +32,7 @@
   }
   
   .soundcloud-container .player .controls .play-btn:hover {
-    background-color: #ff6a33;
+    background-color: #33a3ff;
   }
   
   /* Track artwork styles */
@@ -42,4 +42,13 @@
   
   .soundcloud-container .artwork img {
     max-width: 100%;
+  } 
+
+  .search-wapper{
+   display:flex; 
+   flex-direction: column; 
+   gap: .25rem; 
+   background-color: #33a3ff;
+
+
   }
