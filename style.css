@@ -74,7 +74,7 @@
    
   #navbar a {
     float: left;
-    color: #fff;
+    color: #000000;
     text-align: center;
     padding: 12px 20px;
     text-decoration: none;
@@ -111,4 +111,6 @@
     #navbar-right {
       float: none;
     }
-  }
+  } 
+
+ 

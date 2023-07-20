@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+
    <title>WaveLength</title> 
-   <img src="better.png" height = 150>
-</head>
-<body> 
-    <h2>Homepage cannot be accessed right now</h2>
-    <hr> 
-    <h4>Currently under maintenence</h4>
-    <video controls autoplay muted loop width = 1500> 
-     <source src="waves.mp4">  
-     <img src="lowban.jpg">
-</body>
+  
+</head> 
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+   </head>
+   <body>  
+     
+   <div id="navbar"> 
+     <img src="better.png" alt="logo" height="90
+   ">
+     <div id="navbar-right"> 
+       
+       <a href ="HomePage.html">Home</a>
+       <a href ="#">Artists</a>
+       <a href ="#">Genre</a>
+       <a href ="playlists.html">Playlists</a>
+       <a href ="#">About</a>
+       <a href ="#">Contact</a>
+   </div> 
+   <p><centre><div class="search-wrapper">
+     <label for="search">Search for Songs</label>
+     <input type="search"</centre> </p>
+   </div>
+   
+    
+   <script>
+   window.onscroll = function() {scrollFunction()};
+   function scrollFunction() {
+     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+       document.getElementById("navbar").style.padding = "15px 10px";
+       document.getElementById("logo").style.fontSize = "20px";
+     } else {
+       document.getElementById("navbar").style.padding = "50px 10px";
+       document.getElementById("logo").style.fontSize = "35px";
+     }
+   }
+   </script>
+   </body> 
+<h2>For You</h2> 
+
+ <body> 
 </html>
