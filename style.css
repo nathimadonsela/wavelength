@@ -94,6 +94,7 @@
    
   #navbar a:hover {
     background-color: dodgerblue;
+    box-shadow: #333;
   }
    
   #navbar-right {

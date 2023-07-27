@@ -65,9 +65,9 @@
       </div>
     <h2>Business Man - Shaun Shane Ft. Kidd Vigilante</h2>
    
-        <audio controls > 
+        <audio controls auto loop > 
 
-            <source  src="BusinessMan (w_Kidd Viglante)[prod Kidd Vigilante].mp3" >
+            <source  src="BusinessMan (w_Kidd Viglante)[prod Kidd Vigilante].mp3" class="controls" >
        
              </audio> 
              <a href="BusinessMan (w_Kidd Viglante)[prod Kidd Vigilante].mp3">
@@ -89,7 +89,7 @@
         </div>
       <h2>One of a Kind - Shouldbeyuang</h2>
      
-          <audio controls > 
+          <audio controls auto loop > 
   
               <source  src="One of a kind (Prod. 031Choppa).mp3" >
          
@@ -119,7 +119,7 @@
     </div>
   <h2>R.O.A.D TO SS2 INTERTLUDE - Shouldbeyuang</h2>
  
-      <audio controls > 
+      <audio controls auto loop> 
 
           <source  src="R.O.A.D TO SS2 INTERLUDE (Prod. 808Yuang).mp3" >
      
@@ -139,12 +139,12 @@
     </div>
   <h2>How The Tables Turn - Drake</h2>
  
-      <audio controls > 
+      <audio controls auto loop> 
 
           <source  src="How The Tables Turn feat. Drake (Prod. CHZ).mp3" >
      
            </audio> 
-           <a href="How The Tables Turn feat. Drake (Prod. CHZ).mp3">
+           <a href="How The Tables Turn feat. Drake (Prod. CHZ).mp3" :hover>
 
               Click here to download How The Tables Turn
       
@@ -164,11 +164,21 @@
     </div>
   <h2>Zodiac Signs - Drake</h2>
  
-      <audio controls > 
+      <audio controls auto loop > 
 
           <source  src="Zodiac Signs.mp3" >
-     
-           </audio> 
+          <script>
+            var x = 0;
+            var music = document.getElementById("player");
+            $("#player").bind("ended", function(){
+            x=x+1;
+            music.src = x%4 + ".mp3";
+            music.load();
+            music.play();       
+            });
+            </script>
+         
+         </audio> 
            <a href="Zodiac Signs.mp3">
 
               Click here to download Zodiac Signs
