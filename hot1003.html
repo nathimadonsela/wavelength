@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+      <link rel="shortcut icon" type="x-icon" href="betterlogo.png">
         <title>Hot 100</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,10 +22,33 @@
     <a href ="#">About</a>
     <a href ="#">Contact</a>
 </div> 
-<p><centre><div class="search-wrapper">
+<p><centre><div class="searchbar">
   <label for="search">Search for Songs</label>
   <input type="search"</centre> </p>
-</div>
+  <script src="search.js"></script>
+  <script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('search');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("animals");
+      li = ul.getElementsByTagName('animals');
+    
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("animals")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+
+
 
  
 <script>
@@ -54,14 +77,14 @@ function scrollFunction() {
       <img src="kedrickdamprop.png" height="125" alt="Track Artwork"> 
      
     </div>
- <p><centre><h2>DUCKWORTH - Kendrick Lamar</h2>
+ <p><centre><h2 class="animals">DUCKWORTH - Kendrick Lamar</h2>
  
     <audio controls auto loop> 
 
         <source  src="DUCKWORTH..mp3" >
    
          </audio> 
-         <a href="DUCKWORTH..mp3">
+         <a href="DUCKWORTH..mp3" class="animals">
 
             Click here to download Duckworth
     
@@ -78,7 +101,7 @@ function scrollFunction() {
         <img src="starboy.png" height="125" alt="Track Artwork"> 
        
       </div>
-    <h2>Die For You - The Weeknd</h2>
+    <h2 class="animals" >Die For You - The Weeknd</h2>
    
         <audio controls auto loop > 
 
@@ -393,5 +416,6 @@ function scrollFunction() {
         Copyright &#169; Nathi Madonsela WaveLength Music
          
        </footer></center></p></div>
-</body>
+</body> 
+<footer><center><img src="betterlowban.png" height="100" width="400"></center></footer>
 </html>
