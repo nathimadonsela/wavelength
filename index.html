@@ -32,9 +32,9 @@
       <a href ="#">About</a>
       <a href ="#">Contact</a>
   </div> 
-  <p><centre><div class="search-wrapper">
-    <label for="search">Search for Songs</label>
-    <input type="search"</centre> </p>
+  <p><center><div class="search-wrapper">
+    <label for="search"></label>
+    <input type="search"
   </div>
   
    
@@ -59,47 +59,71 @@
 
   <div id="navbar"> 
   <link rel="stylesheet" href="style.css">
-    <div class="artwork" > 
-      <h2>1.</h2>
+   
+  <div id="navbar"> 
+    <h2>1.</h2>
+    <div class="artwork" >
         <img src="utopia.jpg" height="300" alt="Track Artwork"> 
        
-      </div>
-    <h2>MELTDOWN - Travis Scott</h2>
-   
-        <audio controls auto loop > 
-
-            <source  src="Travis-Scott-MELTDOWN-(HiphopMood.com).mp3"controls" >
+      </div> 
+      <div id="playbutton"><h2>MELTDOWN</h2>
+<h4>Travis Scott</h4>     
+        <audio controls auto loop  > 
+  
+            <source  src="Travis-Scott-MELTDOWN-(HiphopMood.com).mp3" ></div>
+    
+            <script>
+              var x = 0;
+              var music = document.getElementById("player");
+              $("#player").bind("ended", function(){
+              x=x+1;
+              music.src = x%4 + ".mp3";
+              music.load();
+              music.play();       
+              });
+              </script>
+           
+           </audio> 
+             <a href="Travis-Scott-MELTDOWN-(HiphopMood.com).mp3" >
+  
+              <img src="icons8-download-66.png" height="30"> 
        
-             </audio> 
-             <a href="Travis-Scott-MELTDOWN-(HiphopMood.com).mp3">
-
-                Click here to download MELTDOWN
-        
               </a>
+    </div>
       </div>
-      
       
       
     </div> 
     <div id="navbar"> 
       <h2>2.</h2>
-      <div class="artwork" > 
-        <link rel="stylesheet" href="style.css">
-          <img src="manyuang.jpg" height="300" alt="Track Artwork"> 
+      <div class="artwork" >
+          <img src="honestlynevermindforreal.png" height="300" alt="Track Artwork"> 
          
-        </div>
-      <h2>One of a Kind - Shouldbeyuang</h2>
-     
-          <audio controls auto loop > 
-  
-              <source  src="One of a kind (Prod. 031Choppa).mp3" >
+        </div> 
+        <div id="playbutton"><h2>Jimmy Cooks</h2>
+<h4>Drake</h4>     
+          <audio controls auto loop  > 
+    
+              <source  src="Drake ft. 21 Savage - Jimmy Cooks (Official Audio).mp3" ></div>
+      
+              <script>
+                var x = 0;
+                var music = document.getElementById("player");
+                $("#player").bind("ended", function(){
+                x=x+1;
+                music.src = x%4 + ".mp3";
+                music.load();
+                music.play();       
+                });
+                </script>
+             
+             </audio> 
+               <a href="Drake ft. 21 Savage - Jimmy Cooks (Official Audio).mp3" >
+    
+                <img src="icons8-download-66.png" height="30"> 
          
-               </audio> 
-               <a href="One of a kind (Prod. 031Choppa).mp3">
-  
-                  Click here to download One of a Kind
-          
                 </a>
+      </div>
         </div>
         
         
@@ -111,63 +135,89 @@
 
    
 
-  <div id="navbar">
-  <h2>3.</h2>
-  <div class="artwork" > 
-
-      <img src="utopia.jpg" height="300" alt="Track Artwork"> 
-     
-    </div>
-  <h2>FE!N - Travis Scott</h2>
- 
-      <audio controls auto loop> 
-
-          <source  src="Travis-Scott-FE-N-(HiphopMood.com).mp3" >
-     
-           </audio> 
-           <a href="Travis-Scott-FE-N-(HiphopMood.com).mp3">
-
-              Click here to download FE!N
+      <center><div id="navbar"> 
+        <h2>3.</h2>
+        <div class="artwork" >
+            <img src="utopia.jpg" height="300" alt="Track Artwork"> 
+           
+          </div> 
+          <div id="playbutton"><h2>FE!N</h2>
+  <h4>Travis Scott</h4>     
+            <audio controls auto loop  > 
       
-            </a>
-    </div>
- 
-      <div id="navbar">
-  <h2>4.</h2>
-  <div class="artwork" >
-      <img src="utopia.jpg" height="300" alt="Track Artwork"> 
-     
-    </div>
-  <h2>TELEKINESIS - Travis Scott</h2>
- 
-      <audio controls auto loop> 
-
-          <source  src="Travis-Scott-TELEKINESIS-(HiphopMood.com).mp3" >
-     
-           </audio> 
-           <a href="Travis-Scott-TELEKINESIS-(HiphopMood.com).mp3" :hover>
-
-              Click here to download How TELEKINESIS
+                <source  src="Travis-Scott-FE-N-(HiphopMood.com).mp3" ></div>
+        
+                <script>
+                  var x = 0;
+                  var music = document.getElementById("player");
+                  $("#player").bind("ended", function(){
+                  x=x+1;
+                  music.src = x%4 + ".mp3";
+                  music.load();
+                  music.play();       
+                  });
+                  </script>
+               
+               </audio> 
+                 <a href="Travis-Scott-FE-N-(HiphopMood.com).mp3" >
       
-            </a>
-    </div>
+                  <img src="icons8-download-66.png" height="30"> 
+           
+                  </a>
+        </div>
+          </div>
+      </center> 
+ 
+   <center><div id="navbar"> 
+      <h2>4.</h2>
+      <div class="artwork" >
+          <img src="fukumean.jpeg" height="300" alt="Track Artwork"> 
+         
+        </div> 
+        <div id="playbutton"><h2>fukumean </h2>
+<h4>Gunna</h4>     
+          <audio controls auto loop  > 
     
+              <source  src="Gunna - fukumean [Official Visualizer].mp3" ></div>
+      
+              <script>
+                var x = 0;
+                var music = document.getElementById("player");
+                $("#player").bind("ended", function(){
+                x=x+1;
+                music.src = x%4 + ".mp3";
+                music.load();
+                music.play();       
+                });
+                </script>
+             
+             </audio> 
+               <a href="Gunna - fukumean [Official Visualizer].mp3" >
+    
+                <img src="icons8-download-66.png" height="30"> 
+         
+                </a>
+      </div>
+        </div>
+    </center> 
     
   </div>
  
 </div> 
 
-  <div id="navbar"> 
+
+<p><center><div id="navbar"> 
   <h2>5.</h2>
   <div class="artwork" >
-      <img src="osama.jpg" height="300" alt="Track Artwork"> 
+      <img src="austion.jpg" height="300" alt="Track Artwork"> 
      
-    </div>
-  <h2>Kang Lau Shek - Shouldbeyuang</h2>
- 
-      <audio controls auto loop > 
+    </div> 
+    <div id="playbutton"><h2>Mourning</h2>
+<h4>Post Malone</h4>     
+      <audio controls auto loop  > 
 
-          <source  src="Kang Lau Shek (Prod. LifeofSallie) __ 更樓石.mp3" >
+          <source  src="Post Malone - Mourning (Visualizer).mp3" ></div>
+  
           <script>
             var x = 0;
             var music = document.getElementById("player");
@@ -178,15 +228,16 @@
             music.play();       
             });
             </script>
-         
+         <div id="navbar2"></div>
          </audio> 
-           <a href="Kang Lau Shek (Prod. LifeofSallie) __ 更樓石.mp3">
+           <a href="Post Malone - Mourning (Visualizer).mp3" >
 
-              Click here to download Kang Lau Shek
-      
+            <img src="icons8-download-66.png" height="30"> 
+     
             </a>
-    </div>
-    
+  </div>
+    </div></p></center
+  </center> </p>
     
     
   </div>
@@ -204,8 +255,8 @@
 
 <body>
 
-   
-        
+   <div id="wavetexts"> <center><a href="index.html">Back to top</a></center></div>
+ 
         
         
  <p><center><img src="betterlowban.png" height="100" width="400"  >
