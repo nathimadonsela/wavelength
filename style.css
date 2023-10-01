@@ -65,7 +65,7 @@ background: linear-gradient(20deg, #ffffff, #ffffff,#f16d45,#03a9f4);
 background-size: 25%;
 padding: 50px 10px;
 transition: 0.8s; 
-table-layout: fixed;
+
 
 }
 #wavetexts a {
@@ -98,13 +98,23 @@ table-layout: fixed;
    background-size: 100%;
     padding: 50px 10px;
     transition: 0.8s; 
-  
-    
-    
     width: 100;
     top: 0;
     z-index: 99;
-  }
+  } 
+  #navbar-slot {
+    
+    overflow: hidden;
+   background: linear-gradient(20deg, #ffffff, #ffffff, #f16d45, #03a9f4);
+   background-size: 100%;
+    padding: 50px 10px;
+    transition: 0.8s; 
+    height: 20mm; 
+    width: 100;
+    top: 0;
+    z-index: 99;
+  } 
+
    
   #navbar a {
     
@@ -149,8 +159,16 @@ table-layout: fixed;
   }
    
   #navbar a:hover {
-    background-color: dodgerblue;
+   
     box-shadow: #333;
+    color: #03a9f4;
+    background: size auto;; 
+    background-color: #f16d45;
+    
+  }
+  #navbar-slot{
+    height: 20mm;
+
   }
    
   #navbar-right {
@@ -278,4 +296,64 @@ input[type="range"]:active::-ms-thumb {
 #playbutton audio::-webkit-media-controls-panel{
 background: linear-gradient(20deg,#03a9f4,#f16d45);
 border: #03a9f4;
+}
+#progress {
+  -webkit-appearance: none;
+  width: 100%; /* Corrected width value */
+  height: 8px;
+  background: #f16d45;
+  border-radius: 4px;
+  margin: 40px 0;
+  background-position: center;
+  justify-content: center;
+}
+#progress:hover {
+  width: 100%; /* Adjust the width as needed */
+  height: 17px;
+  background: #f16d45;
+  border-radius: 4px;
+  margin: 40px 0;
+  background-position: center;
+}
+
+
+
+/* You can center the progress bar using margin:auto or other methods if needed */
+
+
+#progress::-webkit-slider-thumb { /* Remove the space between #progress and :: */
+  -webkit-appearance: none;
+  background: #f16d45;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 5px 5px #632917;
+}
+.wavecontrols{
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.wavecontrols div{
+width: 60px;
+height: 60px;
+margin: 20px;
+background: #fff;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+color: #f16d45;
+box-shadow: 0 10px 20px #632917;
+cursor: pointer;
+}
+.wavecontrols div:nth-child(2){
+transform: scale(1.5);
+background: #f16d45;
+color: #fff;
+
+
 }
