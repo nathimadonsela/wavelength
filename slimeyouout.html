@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/c0776c011e.js" crossorigin="anonymous"></script>
+  <link rel="js" href=""
+   
+    <link rel="shortcut icon" type="x-icon" href="betterlogo.png">
+    <head> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4817069533089020"
+      crossorigin="anonymous"></script>
+        <link href="style.css" rel="stylesheet">
+   
+    <title>Slime You Out by Drake and SZA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>  
+      
+    <div id="navbar"> 
+      <a href="index.html"><img src="betterheader.png" alt="logo" height="60
+        "></a>
+      <div id="navbar-right"> 
+        
+        <a href ="HomePage.html">Home</a>
+        <a href ="library.html">Library</a>
+        <a href ="#">Recommended</a>
+        <a href ="hot100.html">Hot 100</a>
+        <a href ="#">About</a>
+        <a href ="#">Contact</a>
+    </div> 
+    <p><center><div class="search-wrapper">
+        <label for="search"></label>
+        <input type="search"
+      </div></center>
+    
+     
+    
+
+</head>
+<body>
+  <p><center><div id="navbar"> 
+
+    <div class="artwork" >
+       <img src="slimetheslime.png"
+         height="300" alt="Track Art">
+       
+      </div> 
+      <div id="playbutton"><h2>Slime You Out</h2>
+  <h4>Drake Ft. SZA</h4>  
+  <div class="wavecontrols">
+        <audio  id="song" autoplay > 
+  
+          
+            <source  src="media/Drake - Slime You Out ft. SZA (Official Audio).mp3" type="audio/mpeg" id="song" >
+
+          </audio>
+         
+       
+  
+       <section> <div><i class="fa-solid fa-backward-step"></i></div>
+        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+        <div><i class="fa-solid fa-forward-step"></i></div></section>
+  </div>
+       <center><input type="range" value="0" id="progress"></center> 
+        </div></div>
+          <script>
+            // Get references to elements
+            const progress = document.getElementById("progress");
+            const song = document.getElementById("song");
+            const ctrlicon = document.getElementById("ctrlicon");
+    
+            // Update the progress bar max attribute when audio metadata is loaded
+            song.addEventListener("loadedmetadata", () => {
+                progress.max = song.duration;
+            });
+    
+            // Play or pause audio and update the progress bar
+            function playPause() {
+                if (song.paused) {
+                    song.play();
+                    ctrlicon.classList.remove("fa-play");
+                    ctrlicon.classList.add("fa-pause");
+                    // Start updating the progress bar continuously
+                    progressUpdateInterval = setInterval(updateProgressBar, 500);
+                } else {
+                    song.pause();
+                    ctrlicon.classList.remove("fa-pause");
+                    ctrlicon.classList.add("fa-play");
+                    // Stop updating the progress bar
+                    clearInterval(progressUpdateInterval);
+                }
+            }
+    
+            // Update the progress bar based on the current time of the audio
+            function updateProgressBar() {
+                progress.value = song.currentTime;
+            }
+    
+            // Event listener for changes to the progress bar
+            progress.addEventListener("input", () => {
+                song.currentTime = progress.value;
+            });
+    
+            // Event listener for when the audio ends
+            song.addEventListener("ended", () => {
+                ctrlicon.classList.remove("fa-pause");
+                ctrlicon.classList.add("fa-play");
+                progress.value = 0; // Reset the progress bar
+            });
+    
+            // Set up an interval to update the progress bar continuously
+            let progressUpdateInterval;
+            ctrlicon.addEventListener("click", playPause);
+    
+            // Initially, update the progress bar based on the current time
+            updateProgressBar();
+        </script>
+        
+        
+          </div> 
+  
+          
+       
+           
+           
+           </audio> 
+  
+       
+    </div>
+    
+      </div></p></center
+    </center> </p>
+</body> 
+<footer>
+
+    Copyright &#169; Nathi Madonsela WaveLength Music
+
+   </footer>
+
+<body>
+
+   <div id="wavetexts"> <center><a href="index.html">Back to top</a></center></div>
+ 
+        
+        
+ <p><center><img src="betterlowban.png" height="100" width="400"  >
+ </center></p>
+
+
+</html>
